@@ -1,8 +1,10 @@
 body {
     background: url(./img/background_yellow.jpeg) no-repeat center center fixed;
     background-size: cover;
-    
+
 }
+
+
 
 /* .list-group {
     background-color: red !important;
@@ -30,3 +32,14 @@ label:focus,
     -webkit-appearance:none;
     box-shadow: none !important;
 }
+
+@media screen and (max-width: 800px) {
+    #container{
+        width: 95% !important;
+    }
+
+    .input-group.mb-3.w-75{
+        width: 103% !important;
+    }
+}
+
