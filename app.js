@@ -14,12 +14,11 @@ function adderFunc() {
     const x = document.createElement('a');
     listCon.appendChild(x)
 
-    listCon.innerHTML += `<a href="#" class="list-group-item list-group-item-action d-flex m-auto" id="itemDivs">
-    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-    <label class="btn btn-outline-success d-flex align-items-center" for="btncheck1">Done</label>
+    listCon.innerHTML += `<a href="#" class="list-group-item list-group-item-action d-flex m-auto">
+    <input id="btncheck1" class="form-check-input mt-auto mb-auto" type="checkbox" value="" aria-label="Checkbox for following text input">
     <p class="m-auto fs-5 text-capitalize overflow-auto" id="textP">${textAdder.value}</p>
     <button type="button" class="btn btn-danger" id="removeBtn">Remove</button>
-    </a>`
+  </a>`
     textAdder.value = ''
 
 
@@ -35,9 +34,15 @@ function adderFunc() {
            }
         })
     })
-    document.querySelectorAll('#btncheck1').forEach(i =>)
 
-
+    // document.querySelectorAll('#btncheck1').forEach(j =>{
+    //     j.addEventListener('click', e => {
+    //      if (e.target.parentElement.querySelector('#textP').style.textDecoration = null){
+    //       e.target.parentElement.querySelector('#textP').style.textDecoration = 'line-through'
+    //      }
+        
+    //     })
+    // })
 
     
     // removeBtn.addEventListener('click', (e) => {

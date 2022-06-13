@@ -33,6 +33,14 @@ label:focus,
     box-shadow: none !important;
 }
 
+#btncheck1:checked ~ #textP {
+    text-decoration: line-through;
+    color: #183B59 !important;
+}
+
+
+
+
 @media screen and (max-width: 800px) {
     #container{
         width: 95% !important;
