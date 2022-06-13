@@ -23,21 +23,32 @@ function adderFunc() {
     textAdder.value = ''
 
 
-    const doneBtn = document.querySelector('#btncheck1');
+    // const doneBtn = document.querySelector('#btncheck1');
     const textTodo = document.querySelector('#textP');
-    const removeBtn = document.querySelector('#removeBtn');
     const listItems = document.querySelector('#itemDivs');
+    // const removeBtn = document.querySelector('#removeBtn');
+
+    document.querySelectorAll('#removeBtn').forEach(i => {
+        i.addEventListener('click', e => {
+           if (confirm(`The item will be deleted, are you sure?`)) {
+            e.target.parentElement.remove()
+           }
+        })
+    })
+    document.querySelectorAll('#btncheck1').forEach(i =>)
 
 
 
-    removeBtn.addEventListener('click', (e) => {
+    
+    // removeBtn.addEventListener('click', (e) => {
         // const listItems = document.querySelector('#itemDivs');
         // console.log(listItems);
         // console.log(listItems.closest('#container'));
         // listItems.closest('#container').removeChild(listItems)
         // console.log(e);
 
-    e.target.parentElement.remove()
-    }) 
+        // console.log(e.target.parentElement);
+    // e.target.parentElement.remove()
+    // }) 
 
 }
